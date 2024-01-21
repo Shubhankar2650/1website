@@ -6,6 +6,7 @@ import { Contact } from "./pages/contact";
 import { Navbar } from "./components/Navbar";
 import { Services } from "./pages/services";
 import { Register } from "./pages/register";
+import { Foot } from "./components/foot";
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/login" element = {<Login/>} />
       </Routes>
     </BrowserRouter>
+    <Foot />
   </>
   );
 }

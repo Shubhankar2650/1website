@@ -26,16 +26,20 @@ export const Home = () => {
         <section className="section-activity">
             <div className="grid grid-four-cols">
                 <div className="activity-box">
-                    <span>A</span>
+                    <h2>100+</h2>
+                    <p>registered clients</p>
                 </div>
                 <div className="activity-box">
-                    <span>B</span>
+                    <h2>1000+</h2>
+                    <p>contents in hour</p>
                 </div>
                 <div className="activity-box">
-                    <span>C</span>
+                    <h2>50+</h2>
+                    <p>Courses</p>
                 </div>
                 <div className="activity-box">
-                    <span>D</span>
+                    <h2>24/7</h2>
+                    <p>services</p>
                 </div>
             </div>
         </section>

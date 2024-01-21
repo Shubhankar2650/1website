@@ -107,4 +107,201 @@ a:active{
       height: auto;
     }
   }
+}*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color-scheme: light dark;
+}
+
+:root{
+  --bg-color : #f4f3ff;
+  --btn-color :  #646cff;
+  --dark-color: #242424;
+  --helper-color: #99b9ff;
+}
+
+
+
+html{
+  font-size: 62.5%;
+  max-width: 120rem;
+  margin: auto;
+}
+
+h1{
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
+p,
+li,
+input,
+textarea,
+label{
+  font-size: 1.8rem;
+  line-height: 1.26;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+a{
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  color: var(--btn-color);
+  text-decoration: inherit;
+}
+
+.grid{
+  display: grid;
+  gap: 6rem;
+  /* margin: 0 2rem 0 6rem; */
+}
+
+.grid-two-cols{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-four-cols{
+  grid-template-columns: repeat(4, 0.5fr);
+}
+/* Module rules  */
+
+button{
+  font-size: 1.6rem;
+  padding: 1rem 2.4rem;
+  text-transform: capitalize;
+  background-color: var(--btn-color);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: border-color 0.3s;
+
+}
+
+.btn-group{
+  display: flex;
+}
+
+.button-2{
+  margin-left: 2rem;
+  background: transparent;
+  border: 2px solid var(--bg-color);
+}
+
+/* state rules  */
+button:hover{
+  box-shadow: inset 0 0 0 0.15rem var(--bg-color);
+}
+
+a:hover,
+a:active{
+  color: #646cff;
+}
+
+
+/* home Section */
+
+.section-home{
+  & .grid{
+    align-items: center;
+    background-color: "#000";
+  }
+
+  .home-content{
+    & p{
+      margin: 2.3rem 0 4.6rem 0;
+    }
+    & :first-chil  d {
+      margin: 0 0 1.5rem 0;
+    }
+
+    .button-2{
+      margin-left: 2rem;
+    }
+
+    
+  }
+
+  .home-image{
+    display: flex;
+    justify-content: center;
+    & img{
+      width: 70%;
+      height: auto;
+    }
+  }
+  margin: 5rem 0 5rem 0;
+}
+
+ /* Home section ends  */
+
+ /* Activity Section */
+.section-activity{
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  & .grid{
+    margin: 9rem;  
+  }
+  & .activity-box{
+    color: var(--dark-color);
+    border-left: 2px solid var(--dark-color);
+    text-align: center;
+    padding: 3rem 1.5rem;
+
+  }
+  & :first-child{
+    border-left: none;
+  }
+  
+
+  & h2{
+    font-size: 3rem;
+  }
+
+  & p{
+    text-transform: capitalize;
+  }
+}
+
+ /* Activity Section Ends */
+
+ /* About section  */
+
+ .section-about{
+  & p{
+    margin: 1rem 0;
+  }
+  & h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+  .about-image{
+    display: flex;
+    justify-content: center;
+    & img{
+      width: 70%;
+      height: auto;
+    }
+  }
+ }
+
+ /* footer section  */
+footer{
+  display: flex;
+  height: 7rem;
+  background-color: var(--btn-color);
+  justify-content: center;
+  padding: 2rem;
+
+  & .github{
+    display: flex;
+  }
+  & h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding-left: 1rem;
+    color: var(--bg-color);
+  }
 }
