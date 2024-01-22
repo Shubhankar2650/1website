@@ -21,115 +21,6 @@ html{
 }
 
 h1{
-  font-size: 5.2rem;
-  font-weight: bolder;
-}
-
-p,
-li,
-input,
-textarea,
-label{
-  font-size: 1.8rem;
-  line-height: 1.26;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.06rem;
-}
-
-a{
-  font-weight: 500;
-  font-size: 1.8rem;
-  letter-spacing: 0.1rem;
-  color: var(--btn-color);
-  text-decoration: inherit;
-}
-
-.grid{
-  display: grid;
-  gap: 6rem;
-  /* margin: 0 2rem 0 6rem; */
-}
-
-.grid-two-cols{
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-four-cols{
-  grid-template-columns: repeat(4, 0.5fr);
-}
-/* Module rules  */
-
-button{
-  font-size: 1.6rem;
-  padding: 1rem 2.4rem;
-  text-transform: capitalize;
-  background-color: var(--btn-color);
-  border-radius: 0.8rem;
-  cursor: pointer;
-  letter-spacing: 0.1rem;
-  transition: border-color 0.3s;
-}
-
-/* state rules  */
-button:hover{
-  box-shadow: inset 0 0 0 0.15rem var(--bg-color);
-}
-
-a:hover,
-a:active{
-  color: #646cff;
-}
-
-
-/* home Section */
-
-.section-home{
-  & .grid{
-    align-items: center;
-    background-color: "#000";
-  }
-
-  .home-content{
-    & p{
-      margin: 2.3rem 0 4.6rem 0;
-    }
-    & :first-child{
-      margin: 0 0 1.5rem 0;
-    }
-    
-  }
-
-  .home-image{
-    display: flex;
-    justify-content: center;
-    & img{
-      width: 70%;
-      height: auto;
-    }
-  }
-}*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color-scheme: light dark;
-}
-
-:root{
-  --bg-color : #f4f3ff;
-  --btn-color :  #646cff;
-  --dark-color: #242424;
-  --helper-color: #99b9ff;
-}
-
-
-
-html{
-  font-size: 62.5%;
-  max-width: 120rem;
-  margin: auto;
-}
-
-h1{
   font-size: 5rem;
   font-weight: bolder;
 }
@@ -188,6 +79,10 @@ button{
   margin-left: 2rem;
   background: transparent;
   border: 2px solid var(--bg-color);
+}
+
+.button-submit{
+  margin: 2.6rem 0;
 }
 
 /* state rules  */
@@ -286,6 +181,33 @@ a:active{
     }
   }
  }
+
+ /* contact section */
+ .mb-3{
+  margin-bottom: 3rem;
+ }
+
+ .input-label{
+  padding: 2rem 0;
+  text-transform: capitalize;
+
+  &::after{
+    content: "\a";
+    white-space: pre;
+  }
+ }
+
+ input{
+    width: 45rem;
+    height: auto;
+    padding: 0.1rem 0.2rem;
+ }
+
+ #message{
+  height: 25rem;
+ }
+ 
+ /* contact section ends  */
 
  /* footer section  */
 footer{

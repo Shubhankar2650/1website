@@ -14,7 +14,7 @@ export const Home = () => {
                     </p>
                     <div className="btn btn-group">
                         <a href="/contact"><button className="btn">Contant Now</button></a>
-                        <a href="/services"><button className="btn">Learn More</button></a>
+                        <a href="/services"><button className="btn button-2">Learn More</button></a>
                     </div>
                 </div>
                 <div className="home-image">
@@ -43,6 +43,29 @@ export const Home = () => {
                 </div>
             </div>
         </section>
+        <section className="section-home">
+            
+            <div className="grid grid-two-cols">
+                <div className="home-image">
+                    <img src="/images/laptop.png" alt="welcome" srcset="" />
+                </div>
+                <div className="home-content">
+                    <p>Let's Get Started</p>
+                    <h1>Begin you journey with SK tutorails</h1>
+                    <p>
+                        Be Ready to transform your future by learing cutting edge technologies with us. We are providing
+                        different courses in differet fields with many happy clients.So, what are you waiting for.
+                        Start your learing journey now!!
+                    </p>
+                    <div className="btn btn-group">
+                        <a href="/contact"><button className="btn">Contant Now</button></a>
+                        <a href="/services"><button className="btn">Learn More</button></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
+
     </>;
 };
