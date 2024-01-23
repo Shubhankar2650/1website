@@ -59,7 +59,7 @@ export const Home = () => {
                     </p>
                     <div className="btn btn-group">
                         <a href="/contact"><button className="btn">Contant Now</button></a>
-                        <a href="/services"><button className="btn">Learn More</button></a>
+                        <a href="/services"><button className="btn button-2">Learn More</button></a>
                     </div>
                 </div>
                 
