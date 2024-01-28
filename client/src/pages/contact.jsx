@@ -1,4 +1,5 @@
 import { useState } from "react";
+const URL = "";
 
 export const Contact = () => {
     const [contact, setContact] = (useState({
